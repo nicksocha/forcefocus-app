@@ -1,4 +1,4 @@
-![alt text](https://github.com/nicksocha/forcefocus-app/blob/master/images/force-focus-big.png?raw=true)
+![alt text](https://raw.githubusercontent.com/nicksocha/forcefocus-app/main/images/force-focus-big.png)
 
 #### [Forcefocus.app](https://forcefocus.app) is a site I threw together to help keep everyone on track studying for school…
 

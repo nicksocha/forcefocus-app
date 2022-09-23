@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- Meta Description -->
+    <meta name="description" content="A timer to Force Focus" />
+    <!-- CSS Style Sheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Code|Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forcefocus</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="disable-select">
+      <h1 id="title">Force Focus</h1>
+    </header>
+    <!-- Main -->
+    <main class="disable-select">
+      <div class="timer" id="timer">
+        <h2 id="time">00:00:00</h2>
+        <div class="controls">
+          <button onclick="startTimer('backward')">Backward</button>
+          <button onclick="reset()">Reset</button>
+          <button onclick="startTimer('forward')">Forward</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

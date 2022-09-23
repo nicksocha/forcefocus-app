@@ -1,0 +1,125 @@
+/* * {
+  border: 1px solid gray !important;
+} */
+
+body {
+  background: var(--dark-blue);
+  color: var(--white);
+  font-family: sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* No Scrollbar in Chrome */
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+button {
+  background-color: var(--primary);
+  border-radius: 0.4rem;
+  border: 0.4rem solid var(--white);
+  box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.4);
+  color: var(--button-text);
+  font-size: calc(0.2rem + 1vw);
+  letter-spacing: 0.1rem;
+  margin: 2vw 2vw calc(10px + 3vw);
+  padding: 1rem 2rem;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  transition: 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--white);
+}
+
+h1 {
+  color: var(--primary);
+  font-family: "Rubik Glitch";
+  font-size: calc(60px + 2.5vw);
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: calc(0.1rem + 1vw);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  font-family: "Fira Code";
+  font-size: calc(1.5rem + 8vw);
+  margin: 3vw auto 0;
+  padding: 1.2rem;
+  text-shadow: 0px 3px 6px var(--black);
+}
+
+header,
+main {
+  margin: 1vw 6vw calc(0.1rem + 5.2vw);
+}
+
+html {
+  --black: #111;
+  --button-text: #111;
+  --dark-blue: #0054a6;
+  --green: green;
+  --light-blue: #00a1e0;
+  --light-green: #00ff00;
+  --primary: #ffe922;
+  --red: red;
+  --white: #f3f4f6;
+  scrollbar-width: none; /*No Scrollbar in Firefox */
+}
+
+.disable-select {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.timer {
+  background-color: var(--light-blue);
+  border-radius: calc(0.1rem + 3vw);
+  box-shadow: 0px 0px 21px var(--primary);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#title {
+  background-image: url("../images/title-tile.png");
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 7px;
+  margin: 1vw auto;
+  max-width: calc(15.5rem + 40vw);
+  padding: 20px;
+  text-shadow: 0px 3px 6px var(--black);
+  transition: 2s;
+}
+
+#title:hover {
+  background-image: url("../images/title-tile.png");
+  box-shadow: 0px 0px 25px var(--light-green);
+  text-shadow: 2px 5px 5px var(--red);
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    overflow: visible;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(0.7rem + 1vw);
+    margin: 9vw auto;
+  }
+
+  h2 {
+    margin: 5vw auto 0;
+  }
+}
